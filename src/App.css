@@ -94,6 +94,10 @@ background-color: red !important; /* Change to your desired color */
   border-bottom-color: white !important;
 }
 
+.rhap_repeat-button, .rhap_rewind-button, .rhap_forward-button {
+ display: none !important;
+}
+
 .hidden-credits {
   transition: color 0.2s ease !important;
   color:black

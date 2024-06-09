@@ -53,7 +53,7 @@ const Header: React.FC = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }} >
-      <AppBar position="absolute" style={{ backgroundColor: 'rgba(0,0,0,0.5)',  backdropFilter: 'blur(1px)', boxShadow:'none'}}>
+      <AppBar position="relative" style={{ background: 'none',  backdropFilter: 'none', boxShadow:'none'}}>
         <Toolbar sx={{ justifyContent:'center', justifyContent:'space-evenly', marginTop:'20px'}}>
         <a style={{ color:'white', textDecoration: 'none' }} href="/" onClick={handleHomeClick} title="Home">
           <GiCrossedSwords size="26px" className="hover-effect" />
@@ -61,34 +61,34 @@ const Header: React.FC = () => {
 
         <div class="dropdown">
           <a style={{ color:'white', textDecoration: 'none' }} href="#music" onClick={(e) => handleSectionClick('music', e)}>
-            <Typography className="hover-effect" variant="h5" color="inherit">Music</Typography>
+            <Typography className="hover-effect" variant="h6" color="inherit">Music</Typography>
           </a>
             <div class="dropdown-content">
               <a href="#genre1" onClick={(e) => handleDropdownClick('genre1', e)}>
-              <Typography variant="h5">Genre 1</Typography>
+              <Typography variant="h6">Genre 1</Typography>
               </a>
               <a href="#genre2" onClick={(e) => handleDropdownClick('genre2', e)}>
-              <Typography variant="h5">Genre 2</Typography>
+              <Typography variant="h6">Genre 2</Typography>
               </a>
               <a href="#genre3" onClick={(e) => handleDropdownClick('genre3', e)}>
-              <Typography variant="h5">Genre 3</Typography>
+              <Typography variant="h6">Genre 3</Typography>
               </a>
               <a href="#genre4" onClick={(e) => handleDropdownClick('genre4', e)}>
-              <Typography variant="h5">Genre 4</Typography>
+              <Typography variant="h6">Genre 4</Typography>
               </a>
               <a href="#genre5" onClick={(e) => handleDropdownClick('genre5', e)}>
-              <Typography variant="h5">Genre 5</Typography>
+              <Typography variant="h6">Genre 5</Typography>
               </a>
             </div>
         </div>
         <a style={{ color:'white', textDecoration: 'none' }} href="#videos" onClick={(e) => handleSectionClick('videos', e)}>
-          <Typography className="hover-effect" variant="h5" color="inherit">Videos</Typography>
+          <Typography className="hover-effect" variant="h6" color="inherit">Videos</Typography>
         </a>
         <a style={{ color:'white', textDecoration: 'none' }} href="/about" onClick={handleAboutClick}>
-          <Typography className="hover-effect" variant="h5" color="inherit">About</Typography>
+          <Typography className="hover-effect" variant="h6" color="inherit">About</Typography>
         </a>
         <a style={{ color:'white', textDecoration: 'none' }} href="#contact" onClick={(e) => handleSectionClick('contact', e)}>
-          <Typography className="hover-effect" variant="h5" color="inherit">Contact</Typography>
+          <Typography className="hover-effect" variant="h6" color="inherit">Contact</Typography>
         </a>
       </Toolbar>
     </AppBar>

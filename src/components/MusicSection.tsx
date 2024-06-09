@@ -52,12 +52,12 @@ const MusicSection: React.FC = ({id}) => {
       <Box textAlign="center" sx={{ margin:'auto',maxWidth:{sm:'70%', md:'50%'}}}>
         <img src={Streams} alt="Example" style={{ width: '100%' }} />
       </Box>
-      <Typography id={id} sx={{fontSize:{xs:'60px', sm:'80px', md:'100px'} }} gutterBottom textAlign="center" my="25px">
+      <Typography id={id} sx={{fontSize:{xs:'50px', sm:'70px', md:'90px'} }} gutterBottom textAlign="center" my="25px">
         Music
       </Typography>
 
       <div id="genre1" >
-        <Typography variant="h4" gutterBottom textAlign="center" my="25px">Genre 1</Typography>
+        <Typography variant="h5" gutterBottom textAlign="center" my="25px">Genre 1</Typography>
         {audioSource1.map((audio, index) => (
           <div key={index}>
             <h3>{audio.title}</h3>
@@ -73,7 +73,7 @@ const MusicSection: React.FC = ({id}) => {
       </div>
 
       <div id="genre2">
-        <Typography variant="h4" gutterBottom textAlign="center" my="25px" mt="60px">Genre 2</Typography>
+        <Typography variant="h5" gutterBottom textAlign="center" my="25px" mt="60px">Genre 2</Typography>
         {audioSource2.map((audio, index) => (
           <div key={index}>
             <h3>{audio.title}</h3>
@@ -89,7 +89,7 @@ const MusicSection: React.FC = ({id}) => {
       </div>
       
       <div id="genre3">
-        <Typography variant="h4" gutterBottom textAlign="center" my="25px" mt="60px">Genre 3</Typography>
+        <Typography variant="h5" gutterBottom textAlign="center" my="25px" mt="60px">Genre 3</Typography>
         {audioSource3.map((audio, index) => (
           <div key={index}>
             <h3>{audio.title}</h3>
@@ -105,7 +105,7 @@ const MusicSection: React.FC = ({id}) => {
       </div>
 
       <div id="genre4">
-        <Typography variant="h4" gutterBottom textAlign="center" my="25px" mt="60px">Genre 4</Typography>
+        <Typography variant="h5" gutterBottom textAlign="center" my="25px" mt="60px">Genre 4</Typography>
         {audioSource4.map((audio, index) => (
           <div key={index}>
             <h3>{audio.title}</h3>
@@ -121,7 +121,7 @@ const MusicSection: React.FC = ({id}) => {
       </div>
 
       <div id="genre5">
-        <Typography variant="h4" gutterBottom textAlign="center" my="25px" mt="60px">Genre 5</Typography>
+        <Typography variant="h5" gutterBottom textAlign="center" my="25px" mt="60px">Genre 5</Typography>
         {audioSource5.map((audio, index) => (
           <div key={index}>
             <h3>{audio.title}</h3>

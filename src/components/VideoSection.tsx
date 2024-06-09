@@ -10,7 +10,7 @@ interface YouTubeVideoProps {
 const VideoSection: React.FC<YouTubeVideoProps> = ({ videoId, title, id }) => {
   return (
     <Container>
-      <Typography id={id} sx={{fontSize:{xs:'60px', sm:'80px', md:'100px'} }} gutterBottom textAlign="center" my="25px" mt="150px">
+      <Typography id={id} sx={{fontSize:{xs:'50px', sm:'70px', md:'90px'} }} gutterBottom textAlign="center" my="25px" mt="150px">
         Videos
       </Typography>
      

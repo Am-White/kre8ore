@@ -52,7 +52,7 @@ const ContactSection: React.FC = () => {
       onSubmit={handleSubmit}
       sx={{ display: 'flex', flexDirection: 'column', maxWidth: 800, margin: 'auto' }}
     >
-      <Typography id="contact" sx={{fontSize:{xs:'60px', sm:'80px', md:'100px'} }} gutterBottom textAlign="center" my="25px">Contact</Typography>
+      <Typography id="contact" sx={{fontSize:{xs:'50px', sm:'70px', md:'90px'} }} gutterBottom textAlign="center" my="25px">Contact</Typography>
       <TextField
         label="Name"
         name="name"

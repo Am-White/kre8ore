@@ -9,8 +9,8 @@ const AboutPage = () => {
 }, []);
   return (
     <Box sx={{margin:{sm:'20px', md:'40px'}, textAlign:'center', marginTop:{xs:'100px', sm:'100px', md:'150px', lg:'150px'}}}> 
-      <Typography className="hover-title" sx={{fontSize:{xs:'80px', sm:'100px', md:'120px'}, color:'red', '&:hover': {color:'red',cursor:'default'}}}>Zach Kendall</Typography>
-      <Typography sx={{fontSize:{xs:'20px', sm:'25px'},fontFamily: 'garamond-regular', padding:{md:'20px', lg:'40px'}, marginBottom:'50px'}}> 
+      <Typography className="hover-title" sx={{fontSize:{xs:'50px', sm:'70px', md:'90px'}, color:'red', '&:hover': {color:'red',cursor:'default'}}}>Zach Kendall</Typography>
+      <Typography sx={{fontSize:{xs:'15px', sm:'20px'},fontFamily: 'garamond-regular', padding:{md:'20px', lg:'40px'}, marginBottom:'50px'}}> 
         A 25 year old self taught Musician, Producer, Composer, Writer and Mix Engineer living
         in Los Angeles. Over 12 years playing the guitar and 5 years full time in the music
         industry. I spend my time absorbing and channeling art that inspires me into a sort of
