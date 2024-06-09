@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'DEATHCROW';
+  src: url('/public/fonts/death_crow/DEATHCROW.ttf') format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'DEATHCROW', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app {
+  background-image: url('/public/zz.png'); /* Replace with your image URL */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
+  overflow: auto;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  /* background-color: rgba(0, 0, 0, 0.5); Optional: To make content more readable */
+  padding: 20px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hover-effect, .hover-title {
+  transition: color 0.3s ease;
+}
+
+.hover-effect:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* Container for the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hidden content of the dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(1px);
+}
+
+/* Style for the links in the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Add hover effect for links */
+.dropdown-content a:hover {
+  color: red;
+  cursor: pointer;
+}
+.rhap_play-pause-button {
+  transition: color 0.3s ease !important;
+}
+.rhap_play-pause-button:hover {
+  color: red !important; /* Change to your desired color */
+}
+
+.rhap_progress-filled, .rhap_progress-indicator {
+background-color: red !important; /* Change to your desired color */
+}
+.rhap_current-time, .rhap_total-time {
+  color: rgb(184, 182, 182) !important; /* Change to your desired color */
+}
+.rhap_volume-indicator {
+  background-color: red !important;
+}
+
+.Mui-focused {
+  color: white !important;
+}
+
+.MuiInput-underline:after {
+  border-bottom-color: white !important;
+}
+
+.hidden-credits {
+  transition: color 0.2s ease !important;
+  color:black
+}
+
+.hidden-credits:hover {
+  color:red
 }

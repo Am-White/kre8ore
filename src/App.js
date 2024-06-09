@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { CssBaseline } from '@mui/material';
+import Header from './components/Header.tsx';
+import MainPage from './components/MainPage.tsx';
+import Accessibility from './components/Accessibility.tsx';
+import Terms from './components/Terms.tsx';
+import AboutPage from './components/AboutPage.tsx';
+import Footer from './components/Footer.tsx';
+import PrivacyPolicy from './components/PrivacyPolicy.tsx';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
-function App() {
+const App: React.FC = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+    <div className="app">
+      <div className="content">
+        <CssBaseline />
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/about" element={<AboutPage/>} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+          <Route path="/terms" element={<Terms/>} />
+          <Route path="/accessibility" element={<Accessibility/>} />
+        </Routes>
+        <Footer />
+      </div>
     </div>
+    </Router>
   );
-}
+};
 
 export default App;
